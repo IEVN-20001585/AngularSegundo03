@@ -1,14 +1,35 @@
+<div class="contenedor">
+  <h1>Calcular Distancia entre Dos Puntos</h1>
 
+  <form [formGroup]="formulario">
+    <div>
+      <label>Coordenada x1: </label>
+      <input type="number" formControlName="x1">
+    </div>
+    <br>
+    <div>
+      <label>Coordenada y1: </label>
+      <input type="number" formControlName="y1">
+    </div>
+    <br>
+    <div>
+      <label>Coordenada x2: </label>
+      <input type="number" formControlName="x2">
+    </div>
+    <br>
+    <div>
+      <label>Coordenada y2: </label>
+      <input type="number" formControlName="y2">
+    </div>
+    <br>
+    
+    <button class="btn btn-primary" (click)="calcularDistancia()" type="button">
+      CALCULAR
+    </button>
+  </form>
 
-
-
-
-
-
-
-
-
-
+  <h1>La distancia es: {{ resultado }}</h1>
+</div>
 
 <!-- <div>
     <h1>Multiplica 2 números</h1>

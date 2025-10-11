@@ -1,0 +1,19 @@
+<div class="contenedor">
+    <h1>Multiplicar con Sumas </h1>
+
+    <form [formGroup]="formulario">
+        <div>
+            <label for="">Numero A:</label>
+            <input formControlName="a" type="number">
+        </div>
+        <br>
+        <div>
+            <label for="">Número B:</label>
+            <input formControlName="b" type="number">
+        </div>
+        <br>
+        <button (click)="realizarMultiplicacion()" class="btn btn-primary" type="submit">Multiplicar</button>
+    </form>
+    
+    <h1>Resultado: {{resultado}}</h1>
+</div>

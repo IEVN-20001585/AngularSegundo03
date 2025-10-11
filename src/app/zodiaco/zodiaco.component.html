@@ -1,0 +1,61 @@
+<div class="principal">
+
+  <div class="izquierda">
+    <div class="formulario">
+      <h2>Datos Personales</h2>
+      <form [formGroup]="formulario">
+        <div>
+          <label>Nombre:</label>
+          <input type="text" formControlName="nombre">
+        </div>
+        <br>
+        <div>
+          <label>Apellido Paterno:</label>
+          <input type="text" formControlName="apaterno">
+        </div>
+        <br>
+        <div>
+          <label>Apellido Materno:</label>
+          <input type="text" formControlName="amaterno">
+        </div>
+        <br>
+
+       
+          <h4>Fecha de nacimiento</h4>
+          <label>Día:</label>
+          <input class="fecha" type="number" formControlName="dia">
+          <label>Mes:</label>
+          <input class="fecha" type="number" formControlName="mes">
+          <label>Año:</label>
+          <input class="an" type="number" formControlName="an">
+      
+       
+    
+          <h4>Sexo</h4>
+          <input type="radio" value="Masculino" formControlName="sexo">
+          <label>Masculino</label><br>
+          <input type="radio" value="Femenino" formControlName="sexo">
+          <label>Femenino</label>
+      
+        <br>
+
+        <button type="button" class="btn btn-primary" (click)="Resultado()">Calcular Signo</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="derecha">
+    <div *ngIf="resultado" class="resultado">
+      <div class="imagen">
+        <img class="signoImagen" [src]="resultado.imagen" alt="Imagen del signo zodiacal">
+      </div>
+      <div class="texPrincipal">
+        <h2>Hola {{ resultado.nombre }}</h2>
+        <h3>{{ resultado.descripcion }}</h3>
+        <p>tu signo zodiacal</p>
+        <p class="signoNombre">Es {{ resultado.signo }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

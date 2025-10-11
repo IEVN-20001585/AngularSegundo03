@@ -1,0 +1,56 @@
+
+.principal {
+  display: flex;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: sans-serif;
+  align-items: flex-start;
+}
+
+.izquierda, .derecha {
+  flex: 1; 
+}
+
+.formulario {
+  background-color: rgb(209, 241, 119);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.resultado {
+  display: flex; 
+  align-items: center;
+  text-align: left;
+  border: 1px solid #da9e9e;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: aquamarine;
+  width: 100%;
+}
+.texPrincipal {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.imagen {
+  text-align: center;
+}
+.signoImagen {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  padding: 5px;
+  object-fit: cover;
+}
+.signoNombre {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.fecha {
+  width: 50px;
+}
+.an {
+  width: 70px;
+}
