@@ -12,7 +12,6 @@ import { Zodiaco } from './Zodiaco';
 export class ZodiacoComponent {
 formulario!: FormGroup;
   resultado: any = null;
-
   objZodiaco = new Zodiaco();
 
   ngOnInit(): void {
