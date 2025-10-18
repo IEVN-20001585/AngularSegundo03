@@ -5,10 +5,12 @@ import { ZodiacoComponent } from "./formularios/zodiaco/zodiaco.component";
 import { AporbComponent } from "./formularios/aporb/aporb.component";
 import {initFlowbite} from 'flowbite'
 import { NavbarComponent } from "./navbar/navbar.component";
+import { TempComponent } from "./tem/temp/temp.component";
+import { TemhComponent } from "./tem/temh/temh.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DistanciaComponent, ZodiacoComponent, AporbComponent , NavbarComponent],
+  imports: [RouterOutlet, NavbarComponent, TemhComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
